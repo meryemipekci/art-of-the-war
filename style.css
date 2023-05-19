@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ 
+body{
+    overflow: hidden;
+}
+main{
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header img{
+    width: 150px;
+    display: flex;
+    
+}
+
+#welcome img{
+    background-size: cover;
+    width: vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 10px black ;
+}
+nav a:hover{
+    background-color: rgb(24, 22, 22) ;
+    transition: 0.3;
+}
+
+
+#welcome-img{
+    background-image: url(main.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.welcome-text{
+    text-align: center;
+    width: 90 vw;
+   margin: 200px auto;
+   color: white;
+   text-shadow: 2px 2px 10px black ;
+}
+
+.welcome-text h1{
+    font-size: 56px;
+    font-family: bolder;
+    margin-bottom: 80px;
+}
+.welcome-text h5{
+font-size: 22px;
+max-width: 700px;
+margin: 90px auto;
+
+}
+/*2.kisim*/
+
+ #about{
+    background-color: rgb(8, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.945) ;
+    gap: 120px;
+    padding: 0 50px;
+    width: 100½;
+    height: 100vh;
+   
+}
+
+.about-left{
+    max-width: 500px;    
+}
+
+.about-left h5{
+    font-size: 22px;
+    font-family: bolder;
+    text-transform: uppercase;
+}
+.about-left h1{
+    font-size: 65px;
+    border-bottom: 4px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    line-height: 60px;
+    
+}
+.about-left p{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-left p span{
+    border-bottom: 2px solid crimson;
+}
+ .about-img img{
+    max-width: 400px;
+    max-width: 400px;
+ }
+
+ @media(max-width:1040px){
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .about-left{
+        max-width: 400px;
+       max-height: 400px;
+       margin-bottom: -80px;
+    }
+    .about-img img{
+        max-width: 300px;
+        position: relative;
+    }
+    .about-left h1{
+        font-size: 18px;
+        margin-bottom: 15px;
+
+    }
+    .about-left h5{
+        font-size: 14px;
+    }
+    .about-left p{
+        font-size: 12px;
+    }
+
+ }
+
+ /* 3.kisim */
+ #requirement{
+    background-image: radial-gradient(
+        circle,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.9) 70%
+    ),
+    url(sec-2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+ }
+   
+ 
+ #requirement h4{
+    font-size: 26px;
+    font-weight: bolder;
+ }
+
+ #requirement h1{
+    font-size: 60px;
+    align-items: center;
+    margin-top: -45px;
+ }
+ .boxes{
+   width: 550px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 3px;
+   column-gap: 2px;
+ }
+ .box{
+    border: 2px solid grey;
+   
+    }
+    .boxes .box:nth-child(5){
+        grid-column: auto/span 2;
+    }
+    .boxes .box h2{
+        font-weight: bolder;
+        color: crimson;
+    }
+#opinion{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(sec-3.png);
+    background-size: cover;
+    align-items: center;
+    color: white;
+}
+.opinion-text{
+    margin-left: 60px;
+    
+}
+.opinion-text h3{
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.opinion-text h1{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+}
+
+.opinion-text p{
+margin-bottom: 50px;
+max-width: 350px;
+
+}
+.opinion-text button{
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px; 
+    cursor: pointer;  
+}
+
+.opinion-text button:hover{
+    background-color: #0a080a;
+    color: crimson;
+}
+.opinion-right{
+    min-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: end;
+    margin-left: 200px;
+}
+.card{
+    background-color: rgb(33, 32, 32);
+    max-width: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+     }
+  
+.opinion-right .card:nth-child(2){
+    align-self: start;
+}
+.card img{
+    display: flex;
+    max-width: 50px;
+   
+   }
+.person-info{
+    flex: 1;
+    color: crimson;
+}
+.person-info p{
+    color: grey;
+}
+
+.card p{
+    font-size: 15px;
+    
+}
+@media (max-width:1232px){
+    #opinion{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion-text h1{ font-size: 30px;
+    margin-bottom: 5px;}
+    .opinion-text h3{ font-size: 14px;
+    margin-bottom: 5px;}
+    .opinion-text p{ max-width: 150px;
+        margin-bottom: 7px;
+    font-size: 9px;}
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+       }
+       .opinion-right{
+        max-width: 300px;
+        gap: 15px;
+       }
+
+
+
+}
+
+
+
